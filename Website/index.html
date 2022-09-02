@@ -1,0 +1,282 @@
+<html>
+
+<head>
+  <title>Justin Liu's Portfolio</title>
+  <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Table of<br>Contents</h2>
+      <ul>
+        <li><a href="#exercise01"><b>Exercise 1:</b><br><em>Coding for Humans</em></a></li>
+        <li><a href="#project01"><b>Project 1:</b><br><em>Drawing With Code</em></a></li>
+        <li><a href="#exercise02"><b>Exercise 2:</b><br><em>For Loop & Repetition</em></a></li>
+        <li><a href="#project02"><b>Project 2:</b><br><em>Animation & Interaction</em></a></li>
+        <li><a href="#exercise03"><b>Exercise 3:</b><br><em>Collage (Still)</em></a></li>
+        <li><a href="#project03"><b>Project 3:</b><br><em>Mask</em></a></li>
+        <li><a href="#exercise04_01"><b>Exercise 4.1:</b><br><em>Collage (Animated)</em></a></li>
+        <li><a href="#exercise04_02"><b>Exercise 4.2:</b><br><em>Generative Typography with Functions</em></a></li>
+        <li><a href="#project04"><b>Project 4:</b><br><em>Expanded Cinema Part 1</em></a></li>
+        <li><a href="#exercise05"><b>Exercise 5:</b><br><em>Generative Typography with Objects</em></a></li>
+        <li><a href="#project05"><b>Project 5:</b><br><em>Expanded Cinema Part 2</em></a></li>
+        <li><a href="#exercise06"><b>Exercise 6:</b><br><em>Game Elements</em></a></li>
+        <li><a href="#project06"><b>Project 6:</b><br><em>Game</em></a></li>
+        <li><a href="#project07_01"><b>Project 7.1:</b><br><em>Final Proposal</em></a></li>
+        <li><a href="#project07_02"><b>Project 7.2:</b><br><em>Final Project</em></a></li>
+      </ul>
+    </div>
+
+    <div class="main_content">
+
+      <!-- Header -->
+      <div class="header">
+        <h2 style="color:rgb(253, 135, 212)">UCSB ART 22 - Computer Programming for the Arts</h2>
+        <h2 style="color:rgb(74, 208, 99)">Spring 2022</h2><br>
+        <h1>Justin Liu's Portfolio</h1>
+        <iframe src="https://gifer.com/embed/TEYa" width=480 height=270.000 frameBorder="0" allowFullScreen
+          class="center"></iframe><br>
+      </div>
+
+      <!-- Exercises/Projects -->
+      <div class="project">
+        <h2 id="exercise01">Exercise 1: Coding for Humans</h2>
+
+        <!-- Start Slides - Credit: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="images/exercise01_instructions.jpeg" alt="Instructions" class="center">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/exercise01_self.jpeg" alt="Self Drawing" class="center">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/exercise01_partner.jpeg" alt="Partner Drawing" class="center">
+          </div>
+        </div>
+
+        <div class="slidesButton" style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- End Slides - Credit: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+        <p>
+          The first image contains the drawing instructions I wrote for someone else to replicate.
+          The second image is what I drew after following my own instructions.
+          The third image is what my friend drew.
+          I was a bit worried that my instructions were confusing, but based on the results, I'd say they were
+          understandable.
+        </p><br>
+        <a href="20220402_Exercise1_DrawingWithCode.zip">Download exercise as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="project01">Project 1: Drawing With Code</h2>
+        <img src="images/project01.png" alt="Planetarische Folklore by Victor Vasarely" class="center" />
+        <p>
+          I recreated Victor Vasarely's <em>Planetarische Folklore</em> in Processing.
+          I used GIMP to get the coordinate points for each shape and Digital Color Meter (on Mac) to get the color
+          values.
+          It was pretty time-consuming, but it looks pretty close to the <a
+            href="https://www.mutualart.com/Artwork/4-Works--Planetarische-Folklore/FE143F7408A5B3AF"
+            target="_blank">original</a>!
+        </p><br>
+        <a href="20220402_Project1_DrawingWithCode.zip">Download project as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="exercise02">Exercise 2: For Loop & Repetition</h2>
+        <img src="images/exercise02.gif" alt="Random Circle Grid" class="center" />
+        <p>
+          I used a for loop to create a grid of circles, randomizing the colors for each at 15 frames per second.
+          Hovering over a circle hides the circles in the same column and row.
+        </p><br>
+        <a href="20220405_Exercise2_ColorLoopsAnimation.zip">Download exercise as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="project02">Project 2: Animation & Interaction</h2>
+        <img src="images/project02.gif" alt="Planetarische Folklore by Victor Vasarely (Animated)" class="center" />
+        <p>
+          I animated Victor Vasarely's <em>Planetarische Folklore</em> using the image I created for Project 1.
+          Holding down the mouse button changes the colors in the background.
+          The arrow keys stretch the foreground shapes in the direction that is pressed.
+          I had to look up a lot of stuff in the process, but I like how the piece turned out.
+        </p><br>
+        <a href="20220408_Project2_ColorLoopsAnimation.zip">Download project as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="exercise03">Exercise 3: Collage (Still)</h2>
+        <img src="images/exercise03.gif" alt="Flower Collage" class="center" />
+        <p>
+          Every second, 4 different flower images are randomly chosen from a pool of 10 images.
+          The chosen images are cropped, then put together to create a mixed flower.
+        </p><br>
+        <a href="20220413_Exercise3_MotionCollageAndImages.zip">Download exercise as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="project03">Project 3: Mask</h2>
+        <video width="500px" height="500px" controls="controls" class="center">
+          <source src="images/project03.mov" type="video/mp4">
+        </video>
+        <p>
+          I've never owned a cat before, so I decided to animate one.
+          The positions of the cat's eyes, nose, and mouth are determined by the speaker's volume.
+        </p><br>
+        <a href="20220417_Project3_MotionCollageAndImages.zip">Download project as a ZIP file.</a>
+      </div>
+
+      <!-- EDIT BELOW -->
+      <div class="project">
+        <h2 id="exercise04_01">Exercise 4.1: Collage (Animated)</h2>
+        <img src="images/exercise04_01.gif" alt="Animated Flower Collage" class="center" />
+        <p>
+          I used the images from Exercise 3 to create an animated college.
+          I wanted to simulate a flower blooming since the images are all flowers.
+          To achieve this, I included linear, random, and circular motion.
+        </p><br>
+        <a href="20220423_Exercise4_1_FunctionsAndExpandedCinema.zip">Download exercise as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="exercise04_02">Exercise 4.2: Generative Typography with Functions</h2>
+        <img src="images/exercise04_02.gif" alt="ART Typography" class="center" />
+        <p>
+          I animated the word "ART" with the letters inspired by katakana, a Japanese syllabary.
+          I could say something profound like "It takes countless attempts to make your art stand out" for this piece,
+          but I just wanted to make something that looked cool.
+        </p><br>
+        <a href="20220423_Exercise4_2_FunctionsAndExpandedCinema.zip">Download exercise as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="project04">Project 4: Expanded Cinema Part 1</h2>
+        <img src="images/project04.png" alt="Flowchart" class="center" />
+        <p>
+          Just a fair warning - the story for this project contains references to death.
+          That being said, I planned out the story's paths through a flowchart.
+          I also created a codebase in Processing (included in the ZIP file) that encompasses the basic structure of the
+          story.
+        </p><br>
+        <a href="20220424_Project4_FunctionsAndExpandedCinema.zip">Download project as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="exercise05">Exercise 5: Generative Typography with Objects</h2>
+        <img src="images/exercise05.gif" alt="Flowchart" class="center" />
+        <p>
+          I practiced creating classes to animate the word "ART" again.
+          Every second, the position of the letters and the color of the rectangles in the background are randomly
+          chosen.
+          The colors are mixed using subtractive blending, which is just a fancy way of saying I added <a
+            href="https://processing.org/reference/blendMode_.html" target="_blank">blendMode(SUBTRACT)</a> in my code.
+        </p><br>
+        <a href="20220430_Exercise5_ClassesObjectsAndArrays.zip">Download project as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="project05">Project 5: Expanded Cinema Part 2</h2>
+        <img src="images/project05.gif" alt="Flowchart" class="center" />
+        <p>
+          I finished coding the story I wrote last week with some added details.
+          I also implemented a few features: buttons for the choices and scrolling text to give off a visual novel
+          feeling.
+          I drew the images myself, so apologies in advance.
+        </p><br>
+        <a href="20220501_Project5_ClassesObjectsAndArrays.zip">Download project as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="exercise06">Exercise 6: Game Elements</h2>
+        <img src="images/exercise06.gif" alt="Pong" class="center" />
+        <p>
+          My group (William, Jesus, and I) recreated the basic elements of Pong.
+          The first sketch moves the paddle up and down without it going off-screen.
+          The second sketch uses boolean functions to bounce the ball, reset it to the left side of the screen when it
+          hits the right side, and detect when it makes contact with a paddle.
+        </p><br>
+        <a href="20220504_Exercise6_UsingObjectsToCreateAGame_TranWilliam_BalandranoRamirezJesus_LiuJustin.zip">Download
+          exercise as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="project06">Project 6: Game</h2>
+        <video width="500px" height="500px" controls="controls" class="center">
+          <source src="images/project06.mov" type="video/mp4">
+        </video>
+        <p>
+          Using last week's exercise as a base, my group created an original game called "Ghostkeeper".
+          The goal of the game is to keep the ghost within the paddles for 45 seconds.
+          I still haven't beaten the hard level yet, but maybe that's why it's a hard level.
+        </p><br>
+        <a href="20220515_Project6_UsingObjectsToCreateAGame_TranWilliam_BalandranoRamirezJesus_LiuJustin.zip">Download
+          project as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="project07_01">Project 7.1: Final Proposal</h2>
+        <img src="images/project07.png" alt="Hikikomori" class="center" />
+        <p>
+          For my final project, I want to learn more about <em>hikikomori</em>.
+          <em>Hikikomori</em> is a Japanese term used to broadly describe people who have withdrawn from society and confined themselves in their houses/rooms, usually for at least 6 months.
+          I plan on conveying the experience of a <em>hikikomori</em> through journal entries and articles.
+        </p><br>
+        <a href="20220522_Project7_FinalProject.zip">Download project as a ZIP file.</a>
+      </div>
+
+      <div class="project">
+        <h2 id="project07_02">Project 7.2: Final Project</h2>
+        <img src="images/project07.gif" alt="Hikikomori Desktop" class="center" />
+        <p>
+          My final project is a desktop screen of a hikikomori.
+          Clicking on the folder or the notes app icon sends the user to the hikikomori's journal entries.
+          I wrote the hikikomori's experiences based on peer-reviewed articles and a documentary.
+        </p><br>
+        <a href="20220606_Project7_FinalProject.zip">Download project as a ZIP file.</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Start Slideshow Script - Credit: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <!-- End Slideshow Script - Credit: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+</body>
+
+</html>

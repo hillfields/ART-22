@@ -1,0 +1,167 @@
+/* GLOBAL SETTINGS */
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Short+Stack&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Short Stack', Helvetica, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+/* SIDEBAR */
+
+.wrapper .sidebar {
+    width: 270px;
+    height: 100%;
+    background: #ADD8E6;
+    padding: 30px 0px;
+    position: fixed;
+    overflow: auto;
+}
+
+.wrapper .sidebar h2 {
+    color: #b781f4;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.wrapper .sidebar ul li {
+    padding: 15px;
+}
+
+.wrapper .sidebar ul li a {
+    color: #728cff;
+    display: block;
+}
+
+.wrapper .sidebar ul li:hover {
+    background-color: #84d1f4;
+}
+
+.wrapper .sidebar ul li:hover a {
+    color: #fff;
+}
+
+/* MAIN CONTENT */
+
+.wrapper .main_content {
+    margin-left: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.wrapper .main_content .header h1 {
+    font-size: 24pt;
+    margin-bottom: 15px;
+    color: #4287f5;
+}
+
+.wrapper .main_content h2 {
+    font-size: 18pt;
+}
+
+.wrapper .main_content .project {
+    margin-bottom: 25px;
+}
+
+.wrapper .main_content .project h2 {
+    color: #ffb60a;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 15px;
+    vertical-align: middle;
+}
+
+video {
+    margin-bottom: 15px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+p {
+    font-size: 12pt;
+    color: #919191;
+}
+
+p a,
+.project a {
+    color: rgb(126, 157, 234);
+}
+
+p a:hover,
+.project a:hover {
+    color: rgb(81, 204, 185);
+}
+
+
+/* SLIDESHOW (Credit: https://www.w3schools.com/howto/howto_js_slideshow.asp) */
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.slidesButton {
+    margin-bottom: 15px;
+}
+
+.slideshow-container .mySlides img {
+    max-width: 45%;
+}
